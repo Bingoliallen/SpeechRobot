@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.codestuding.android:basemarqueeview-1.0.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/basemarqueeview-1.0.1.aar/1d490e0883acd6847e35515bfb6435cc/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/basemarqueeview-1.0.1.aar/1d490e0883acd6847e35515bfb6435cc/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.codestuding.android/basemarqueeview/1.0.1/c360b4ed40be1e21b23d3d4ad32e4010b0745ce9/basemarqueeview-1.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

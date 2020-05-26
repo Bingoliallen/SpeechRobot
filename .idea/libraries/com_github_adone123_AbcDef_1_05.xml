@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.github.adone123:AbcDef-1.05">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/AbcDef-1.05.aar/ccd3aad199c410ab72b2d36bfe09b78d/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/AbcDef-1.05.aar/ccd3aad199c410ab72b2d36bfe09b78d/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.adone123/AbcDef/1.05/87ac9fbb24a91a2e1b2a6da22f5047a13809028a/AbcDef-1.05-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

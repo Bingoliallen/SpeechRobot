@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="com.github.zhouzhuo810:ZzExcelCreator-1.0.6">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/ZzExcelCreator-1.0.6.aar/6956ec5c2be4798235c4cf87c108b54d/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/ZzExcelCreator-1.0.6.aar/6956ec5c2be4798235c4cf87c108b54d/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/ZzExcelCreator-1.0.6.aar/6956ec5c2be4798235c4cf87c108b54d/jars/libs/jxl.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.zhouzhuo810/ZzExcelCreator/1.0.6/fa7cc84c0c09e831451aa8332bcc90b64097bcf0/ZzExcelCreator-1.0.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

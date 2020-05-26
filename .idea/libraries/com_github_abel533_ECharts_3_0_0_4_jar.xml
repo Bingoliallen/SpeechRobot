@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="com.github.abel533:ECharts:3.0.0.4@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.abel533/ECharts/3.0.0.4/966acb300d842b761388b5105020a85f8a9019e0/ECharts-3.0.0.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.abel533/ECharts/3.0.0.4/f2ee240a03d4b73515bc67908a5dae29c1c9ff7f/ECharts-3.0.0.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
