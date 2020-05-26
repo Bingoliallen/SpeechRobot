@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_app_theme6"
+    android:orientation="vertical"
+    tools:context="com.vma.speechrobot.view.activity.CallRecordActivity">
+
+    <include layout="@layout/layout_title" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/main_num_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tvLevel"
+                    android:layout_width="0dp"
+                    android:layout_height="12dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/create_task_ed_shape"
+                    android:drawablePadding="1.2dp"
+                    android:drawableRight="@drawable/down_select"
+                    android:gravity="center_vertical"
+                    android:hint="客户等级"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="1dp"
+                    android:singleLine="true"
+                    android:textColor="#ff8995a0"
+                    android:textColorHint="#ff8995a0"
+                    android:textSize="5sp" />
+
+                <LinearLayout
+                    android:id="@+id/tvCount"
+                    android:layout_width="0dp"
+                    android:layout_height="12dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1.2"
+                    android:background="@drawable/create_task_ed_shape"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvCount_"
+                        android:layout_width="0dp"
+                        android:layout_height="12dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:hint="通话轮次"
+                        android:paddingLeft="3dp"
+                        android:singleLine="true"
+                        android:textColor="#ff8995a0"
+                        android:textColorHint="#ff8995a0"
+                        android:textSize="5sp" />
+
+
+                    <ImageView
+                        android:id="@+id/iv_delete0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="0dp"
+                        android:paddingLeft="3dp"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:src="@mipmap/to_delete" />
+
+                    <!-- <TextView
+                         android:layout_marginRight="1dp"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:drawableRight="@drawable/down_select"
+                         />-->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tvTime"
+                    android:layout_width="0dp"
+                    android:layout_height="12dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1.2"
+                    android:background="@drawable/create_task_ed_shape"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvTime_"
+                        android:layout_width="0dp"
+                        android:layout_height="12dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:hint="通话时长"
+                        android:paddingLeft="3dp"
+                        android:singleLine="true"
+                        android:textColor="#ff8995a0"
+                        android:textColorHint="#ff8995a0"
+                        android:textSize="5sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_delete01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="0dp"
+                        android:paddingLeft="3dp"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:src="@mipmap/to_delete" />
+                    <!-- <TextView
+                         android:layout_marginRight="1dp"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:drawableRight="@drawable/down_select"
+                         />-->
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvStatus"
+                    android:layout_width="0dp"
+                    android:layout_height="12dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/create_task_ed_shape"
+                    android:drawableRight="@drawable/down_select"
+                    android:gravity="center_vertical"
+                    android:hint="分配状态"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="1dp"
+                    android:singleLine="true"
+                    android:textColor="#ff8995a0"
+                    android:textColorHint="#ff8995a0"
+                    android:textSize="5sp" />
+
+                <TextView
+                    android:id="@+id/tvResult"
+                    android:layout_width="0dp"
+                    android:layout_height="12dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/create_task_ed_shape"
+                    android:drawableRight="@drawable/down_select"
+                    android:gravity="center_vertical"
+                    android:hint="呼叫状态"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="1dp"
+                    android:singleLine="true"
+                    android:textColor="#ff8995a0"
+                    android:textColorHint="#ff8995a0"
+                    android:textSize="5sp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="12dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="2.4"
+                    android:background="@drawable/create_task_ed_shape"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/mTask2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/mTask2_"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:hint="起始日期"
+                            android:paddingLeft="1dp"
+                            android:singleLine="true"
+                            android:textColor="#ff8995a0"
+                            android:textColorHint="#ff8995a0"
+                            android:textSize="5sp" />
+
+                        <ImageView
+                            android:id="@+id/iv_delete1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="3dp"
+                            android:paddingTop="3dp"
+                            android:paddingBottom="3dp"
+                            android:src="@mipmap/to_delete" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="- "
+                        android:singleLine="true"
+                        android:textColor="#ff8995a0"
+                        android:textColorHint="#ff8995a0"
+                        android:textSize="5sp" />
+
+                    <LinearLayout
+                        android:id="@+id/mTask21"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/mTask21_"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:hint="终止日期"
+                            android:singleLine="true"
+                            android:textColor="#ff8995a0"
+                            android:textColorHint="#ff8995a0"
+                            android:textSize="5sp" />
+
+                        <ImageView
+                            android:id="@+id/iv_delete2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="0dp"
+                            android:paddingLeft="3dp"
+                            android:paddingTop="3dp"
+                            android:paddingBottom="3dp"
+                            android:src="@mipmap/to_delete" />
+                    </LinearLayout>
+                    <!--<TextView
+                        android:layout_marginRight="1dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/down_select"
+                        />-->
+                </LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/edSearch"
+                    android:layout_width="0dp"
+                    android:layout_height="12dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1.1"
+                    android:background="@drawable/create_task_ed_shape"
+                    android:hint="搜索ID/客户号码"
+                    android:paddingLeft="3dp"
+                    android:singleLine="true"
+                    android:textColor="#ff8995a0"
+                    android:textColorHint="#ffd4dce3"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="5sp" />
+
+                <TextView
+                    android:id="@+id/tvSearch"
+                    android:layout_width="20dp"
+                    android:layout_height="12dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/call_record_search_shape"
+                    android:gravity="center"
+                    android:text="查询"
+                    android:textColor="#ffffffff"
+                    android:textSize="5sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/main_num_bg"
+                android:orientation="vertical">
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:overScrollMode="never"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#fff2f2f2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvexport"
+                        android:layout_width="30dp"
+                        android:layout_height="12dp"
+                        android:background="@drawable/call_record_search_shape"
+                        android:gravity="center"
+                        android:text="导出数据"
+                        android:textColor="#ffffffff"
+                        android:textSize="5sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:textColor="#ffffffff"
+                        android:textSize="5sp" />
+
+                    <TextView
+                        android:id="@+id/tvPages"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="共0条"
+                        android:textColor="#ff56626e"
+                        android:textSize="5sp" />
+
+
+                    <ImageView
+                        android:id="@+id/iv_dingye"
+                        android:layout_width="5dp"
+                        android:layout_height="7dp"
+                        android:layout_marginLeft="2dp"
+                        android:src="@drawable/dingye" />
+
+                    <ImageView
+                        android:id="@+id/iv_shangyiye"
+                        android:layout_width="4dp"
+                        android:layout_height="7dp"
+                        android:layout_marginLeft="2dp"
+                        android:src="@drawable/shangyiye" />
+
+                    <TextView
+                        android:id="@+id/tvfocus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:text="第"
+                        android:textColor="#ff56626e"
+                        android:textSize="5sp" />
+
+                    <EditText
+                        android:id="@+id/mTask8"
+                        android:layout_width="25dp"
+                        android:layout_height="10dp"
+                        android:layout_marginLeft="2dp"
+                        android:background="@drawable/create_task_ed_shape"
+                        android:gravity="center"
+                        android:imeOptions="actionSearch"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:text="1"
+                        android:textColor="#ff57636f"
+                        android:textColorHint="#ffd4dce3"
+                        android:textCursorDrawable="@drawable/color_cursor"
+                        android:textSize="7sp" />
+
+                    <TextView
+                        android:id="@+id/tvPages1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="共0页"
+                        android:textColor="#ff56626e"
+                        android:textSize="5sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_xiayiye"
+                        android:layout_width="4dp"
+                        android:layout_height="7dp"
+                        android:layout_marginLeft="2dp"
+                        android:src="@drawable/xiayiye" />
+
+
+                    <ImageView
+                        android:id="@+id/iv_diye"
+                        android:layout_width="5dp"
+                        android:layout_height="7dp"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/diye" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

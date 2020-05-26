@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <color name="common_gray">#B9B9B9</color>
+  <color name="common_task">#ff57636f</color>
+  <!--common app theme-->
+  <color name="common_app_theme1">#02c1de</color>
+  <color name="common_app_theme2">#ffffff</color>
+  <color name="common_app_theme3">#66d8ad</color>
+  <color name="common_app_theme4">#24c7a9</color>
+  <color name="common_app_theme5">#3ec093</color>
+  <color name="common_app_theme6">#f1f1f1</color>
+  <color name="common_app_theme7">#e5e5e5</color>
+  <color name="common_app_theme8">#ff7570</color>
+  <color name="common_app_theme9">#f2f2f2</color>
+  <color name="common_app_theme10">#15987f</color>
+  <color name="common_app_theme11">#8995a0</color>
+  <color name="common_app_theme12">#cfcfcf</color>
+  <color name="common_app_theme13">#0091db</color>
+
+  <!--common app theme text-->
+  <color name="common_app_text_theme1">#02c1de</color>
+  <color name="common_app_text_theme2">#57636f</color>
+  <color name="common_app_text_theme3">#8995a0</color>
+  <color name="common_app_text_theme4">#ffffff</color>
+  <color name="common_app_text_theme5">#3ec093</color>
+  <color name="common_app_text_theme6">#ff7570</color>
+  <color name="common_app_text_theme7">#2c393f</color>
+  <color name="common_app_text_theme8">#cfcfcf</color>
+  <color name="common_app_text_theme9">#8f8f8f</color>
+  <color name="common_app_text_theme10">#FF5954</color>
+
+  <color name="common_app_text_theme12">#ff02c1df</color>
+  <color name="common_app_text_theme11">#ff57636f</color>
+
+
+  <!--level-->
+  <color name="common_app_levelA">#3ec093</color>
+  <color name="common_app_levelB">#f7ad60</color>
+  <color name="common_app_levelC">#0091db</color>
+  <color name="common_app_levelD">#3bc1c3</color>
+  <color name="common_app_levelE">#ea5f5f</color>
+  <color name="common_app_levelF">#a858ef</color>
+
+  <!--time-->
+  <color name="common_app_time1">#3ec093</color>
+  <color name="common_app_time2">#53c9d7</color>
+  <color name="common_app_time3">#f0734b</color>
+  <color name="common_app_time4">#c03e80</color>
+
+  <!--common advert btn-->
+  <color name="common_base_advert_tv_skip">#77404040</color>
+  <color name="common_base_advert_tv_skip_text">#FFFFFF</color>
+
+  <!--common image placeholder-->
+  <color name="common_image_placeholder">#FFDBDBDB</color>
+
+  <!--common image source dialog-->
+  <color name="common_image_source_dialog_camera">#FF4081</color>
+  <color name="common_image_source_dialog_album">#009EE7</color>
+  <color name="common_image_source_dialog_cancel">#CCCCCC</color>
+
+  <!--common toast-->
+  <color name="common_toast_default">#C6404040</color>
+  <color name="common_toast_error">#FF0000</color>//FD4C5B
+  <color name="common_toast_success">#388E3C</color>
+  <color name="common_toast_info">#3F51B5</color>
+  <color name="common_toast_warning">#FFA900</color>
+</resources>

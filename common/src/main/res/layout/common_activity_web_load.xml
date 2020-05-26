@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+  <com.example.common.widget.TitleBarView
+    android:id="@+id/title_bar"
+    style="@style/TitleBarView"
+    android:layout_width="match_parent"
+    app:title_text_color="@color/common_app_text_theme1"
+    app:title_text_size="@dimen/text_size2" />
+
+  <RelativeLayout
+    android:id="@+id/rl_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+
+</LinearLayout>

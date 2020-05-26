@@ -1,0 +1,1119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_app_theme6"
+    android:orientation="vertical">
+    <include layout="@layout/layout_title" />
+   <!-- <com.example.common.widget.TitleBarView
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="#373E41"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        app:left_drawable="@drawable/goback"
+        app:left_drawable_height="20dp"
+        app:left_drawable_width="12dp"
+        app:left_height="8dp"
+        app:left_text_size="8sp"
+        app:left_width="10dp"
+        app:right_text_color="#ffffffff"
+        app:right_text="创建任务"
+        app:right_text_size="8sp"
+        app:title="创建营销任务"
+        app:title_text_color="#ffffffff"
+        app:title_text_size="10sp" />-->
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/common_title">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/main_num_bg"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/toFisrt"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/create_task_shape"
+                        android:gravity="center"
+                        android:text="基础信息"
+                        android:textColor="#ff57636f"
+                        android:textSize="7sp" />
+
+                    <!--<View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="#fff0f0f0" />-->
+
+                    <TextView
+                        android:id="@+id/toSecond"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/create_task_shape1"
+                        android:gravity="center"
+                        android:text="高级设置"
+                        android:textColor="#ff8995a0"
+                        android:textSize="7sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mLinerFirst"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="3dp"
+                            android:layout_height="3dp"
+                            android:src="@drawable/icon_bitian" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:text="任务名称："
+                            android:textColor="#ff57636f"
+                            android:textSize="7sp" />
+
+                        <EditText
+                            android:id="@+id/tvCreate0"
+                            android:layout_width="163dp"
+                            android:layout_height="16dp"
+                            android:layout_marginLeft="5dp"
+                            android:singleLine="true"
+                            android:background="@drawable/create_task_ed_shape"
+                            android:hint="请输入任务名称"
+                            android:paddingLeft="5dp"
+                            android:textColor="#ff57636f"
+                            android:textColorHint="#ffd4dce3"
+                            android:textCursorDrawable="@drawable/color_cursor"
+                            android:textSize="7sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="3dp"
+                            android:layout_height="3dp"
+                            android:src="@drawable/icon_bitian" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="话术模版："
+                            android:textColor="#ff57636f"
+                            android:textSize="7sp" />
+
+                        <TextView
+                            android:id="@+id/tvCreate1"
+                            android:layout_width="163dp"
+                            android:layout_height="16dp"
+                            android:layout_marginLeft="5dp"
+                            android:singleLine="true"
+                            android:background="@drawable/create_task_ed_shape"
+                            android:drawableRight="@drawable/down_select"
+                            android:gravity="center_vertical"
+                            android:hint="请选择话术模版"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:textColor="#ff57636f"
+                            android:textColorHint="#ffd4dce3"
+                            android:textSize="7sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/box0"
+                                android:layout_width="7dp"
+                                android:layout_height="7dp"
+                                android:background="@drawable/check_box_selector"
+                                android:button="@null" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dp"
+                                android:text="设置为默认"
+                                android:textColor="#ff02c1df"
+                                android:textSize="8sp" />
+                        </LinearLayout>
+
+
+
+                        <ImageView
+                            android:id="@+id/ivWB1"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:padding="5dp"
+                            android:layout_marginLeft="0dp"
+                            android:src="@drawable/wenhao" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="3dp"
+                                android:layout_height="3dp"
+                                android:src="@drawable/icon_bitian" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="客户号码："
+                                android:textColor="#ff57636f"
+                                android:textSize="7sp" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="163dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tvDaoRu"
+                                    android:layout_width="30dp"
+                                    android:layout_height="14dp"
+                                    android:background="@drawable/create_task_btn_shape"
+                                    android:gravity="center"
+                                    android:text="导入"
+                                    android:textColor="#ffffffff"
+                                    android:textSize="7sp" />
+
+                                <TextView
+                                    android:id="@+id/tvShuRu"
+                                    android:layout_width="30dp"
+                                    android:layout_height="14dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:background="@drawable/create_task_btn_shape"
+                                    android:gravity="center"
+                                    android:text="输入"
+                                    android:textColor="#ffffffff"
+                                    android:textSize="7sp" />
+
+                                <TextView
+                                    android:id="@+id/tvYinRu"
+                                    android:layout_width="30dp"
+                                    android:layout_height="14dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:background="@drawable/create_task_btn_shape"
+                                    android:gravity="center"
+                                    android:text="引入"
+                                    android:textColor="#ffffffff"
+                                    android:textSize="7sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="共计 "
+                                    android:textColor="#ff8995a0"
+                                    android:textSize="7sp" />
+
+                                <TextView
+                                    android:id="@+id/all_num"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0"
+                                    android:textColor="#ff3ec093"
+                                    android:textSize="7sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=" 位客户，有效客户"
+                                    android:textColor="#ff8995a0"
+                                    android:textSize="7sp" />
+
+                                <TextView
+                                    android:id="@+id/effective_num"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0"
+                                    android:textColor="#ff3ec093"
+                                    android:textSize="7sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="位"
+                                    android:textColor="#ff8995a0"
+                                    android:textSize="7sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_callnumberLook"
+                                    android:visibility="gone"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+                                    android:text="查看"
+                                    android:textColor="#ff02c1de"
+                                    android:textSize="8sp" />
+
+                                <TextView
+                                    android:visibility="gone"
+                                    android:id="@+id/tv_callnumberDelete"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+                                    android:text="删除"
+                                    android:textColor="#ffff7570"
+                                    android:textSize="8sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="注：导入excel格式文件。点击  "
+                                    android:textColor="#ff8995a0"
+                                    android:textSize="7sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_callnumberMode"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="获取模版"
+                                    android:textColor="#ff02c1de"
+                                    android:textSize="7sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="3dp"
+                            android:layout_height="3dp"
+                            android:src="@drawable/icon_bitian"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="外呼坐席："
+                            android:textColor="#ff57636f"
+                            android:textSize="7sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_callnumber"
+                                android:layout_width="163dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/create_task_ed_shape"
+                                android:drawableRight="@drawable/down_select"
+                                android:gravity="center_vertical|left"
+                                android:hint=""
+                                android:paddingTop="3dp"
+                                android:paddingBottom="3dp"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:textColor="#ff57636f"
+                                android:textColorHint="#ffd4dce3"
+                                android:textSize="7sp" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="坐席共"
+                                    android:textColor="#ff8995a0"
+                                    android:textSize="7sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_callnumber1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0"
+                                    android:textColor="#ff3ec093"
+                                    android:textSize="7sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="个,已用"
+                                    android:textColor="#ff8995a0"
+                                    android:textSize="7sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_callnumber2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0"
+                                    android:visibility="visible"
+                                    android:textColor="#ff3ec093"
+                                    android:textSize="7sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="个,空闲"
+                                    android:textColor="#ff8995a0"
+                                    android:textSize="7sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_callnumber3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0"
+                                    android:textColor="#ff3ec093"
+                                    android:textSize="7sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="个"
+                                    android:textColor="#ff8995a0"
+                                    android:textSize="7sp" />
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="3dp"
+                            android:layout_height="3dp"
+                            android:src="@drawable/icon_bitian"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="微信推送："
+                            android:textColor="#ff57636f"
+                            android:textSize="7sp" />
+
+                        <TextView
+                            android:id="@+id/wc_push1"
+                            android:layout_width="63dp"
+                            android:layout_height="16dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/create_task_tv_shape"
+                            android:gravity="center"
+                            android:text="意向客户推送"
+                            android:textColor="#ff3ec093"
+                            android:textSize="6sp" />
+
+                        <ImageView
+                            android:id="@+id/ivWB2"
+                            android:layout_width="5dp"
+                            android:layout_height="5dp"
+                            android:layout_marginLeft="4dp"
+                            android:src="@drawable/wenhao" />
+
+                        <TextView
+                            android:id="@+id/wc_push2"
+                            android:layout_width="63dp"
+                            android:layout_height="16dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/create_task_tv_shape"
+                            android:gravity="center"
+                            android:text="任务情况推送"
+                            android:textColor="#ff3ec093"
+                            android:textSize="6sp" />
+
+                        <ImageView
+                            android:id="@+id/ivWB3"
+                            android:layout_width="5dp"
+                            android:layout_height="5dp"
+                            android:layout_marginLeft="4dp"
+                            android:src="@drawable/wenhao" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="3dp"
+                            android:layout_height="3dp"
+                            android:src="@drawable/icon_bitian"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="短信推送："
+                            android:textColor="#ff57636f"
+                            android:textSize="7sp" />
+
+
+                        <TextView
+                            android:id="@+id/msgCall"
+                            android:layout_width="63dp"
+                            android:layout_height="16dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/create_task_tv_shape"
+                            android:gravity="center"
+                            android:text="通话过程中短信"
+                            android:textColor="#ff3ec093"
+                            android:textSize="6sp" />
+
+                        <ImageView
+                            android:id="@+id/ivWB4"
+                            android:layout_width="5dp"
+                            android:layout_height="5dp"
+                            android:layout_marginLeft="4dp"
+                            android:src="@drawable/wenhao" />
+
+                        <TextView
+                            android:id="@+id/msgCallEnd"
+                            android:layout_width="63dp"
+                            android:layout_height="16dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/create_task_tv_shape"
+                            android:gravity="center"
+                            android:text="通话结束中短信"
+                            android:textColor="#ff3ec093"
+                            android:textSize="6sp" />
+
+                        <ImageView
+                            android:id="@+id/ivWB5"
+                            android:layout_width="5dp"
+                            android:layout_height="5dp"
+                            android:layout_marginLeft="4dp"
+                            android:src="@drawable/wenhao" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="3dp"
+                            android:layout_height="3dp"
+                            android:src="@drawable/icon_bitian"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="短信推送："
+                            android:textColor="#ff57636f"
+                            android:textSize="7sp"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="可用短信数量："
+                            android:textColor="#ff8995a0"
+                            android:textSize="7sp" />
+
+                        <TextView
+                            android:id="@+id/tv_message_sum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0/0"
+                            android:textColor="#ff3ec093"
+                            android:textSize="7sp" />
+
+                        <ImageView
+                            android:id="@+id/ivWB7"
+                            android:layout_width="5dp"
+                            android:layout_height="5dp"
+                            android:layout_marginLeft="4dp"
+                            android:src="@drawable/wenhao" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mLinerSecond"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="3dp"
+                            android:layout_height="3dp"
+                            android:src="@drawable/icon_bitian" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:text="时间模版："
+                            android:textColor="#ff57636f"
+                            android:textSize="7sp" />
+
+                        <TextView
+                            android:id="@+id/tvCreateTime"
+                            android:layout_width="163dp"
+                            android:layout_height="16dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/create_task_ed_shape"
+                            android:drawableRight="@drawable/down_select"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="10dp"
+                            android:hint="请选择时间模版"
+                            android:textColor="#ff57636f"
+                            android:textColorHint="#ffd4dce3"
+                            android:textSize="7sp" />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/box3"
+                                android:layout_width="7dp"
+                                android:layout_height="7dp"
+                                android:background="@drawable/check_box_selector"
+                                android:button="@null" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dp"
+                                android:text="设置为默认"
+                                android:textColor="#ff02c1df"
+                                android:textSize="8sp" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="7dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="3dp"
+                            android:layout_height="3dp"
+                            android:src="@drawable/icon_bitian" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+
+                            android:text="启动方式："
+                            android:textColor="#ff57636f"
+                            android:textSize="7sp" />
+
+
+                        <TextView
+                            android:id="@+id/tvCreateQD"
+                            android:layout_width="163dp"
+                            android:layout_height="16dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/create_task_ed_shape"
+                            android:drawableRight="@drawable/down_select"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="10dp"
+                            android:text="立即启动"
+                            android:textColor="#ff57636f"
+                            android:textColorHint="#ffd4dce3"
+                            android:textSize="7sp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/mLinear"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="7dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="3dp"
+                            android:layout_height="3dp"
+                            android:src="@drawable/icon_bitian" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+
+                            android:text="启动时间："
+                            android:textColor="#ff57636f"
+                            android:textSize="7sp" />
+
+
+                        <LinearLayout
+                            android:id="@+id/tvCreateQD1"
+                            android:background="@drawable/create_task_ed_shape"
+                            android:layout_width="80dp"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center_vertical"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="16dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tvCreateQD1_"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:hint="请选择日期"
+                                android:paddingLeft="5dp"
+                                android:singleLine="true"
+                                android:textColor="#ff8995a0"
+                                android:textColorHint="#ff8995a0"
+                                android:textSize="7sp" />
+
+                            <ImageView
+                                android:id="@+id/iv_delete1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="3dp"
+                                android:paddingTop="3dp"
+                                android:paddingBottom="3dp"
+                                android:paddingRight="2dp"
+                                android:src="@mipmap/to_delete" />
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint=" — "
+                            android:singleLine="true"
+                            android:textColor="#ff8995a0"
+                            android:textColorHint="#ff8995a0"
+                            android:textSize="5sp" />
+                        <LinearLayout
+                            android:id="@+id/tvCreateQD2"
+                            android:background="@drawable/create_task_ed_shape"
+                            android:layout_width="80dp"
+                            android:layout_height="16dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tvCreateQD2_"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:hint="请选择时分"
+                                android:singleLine="true"
+                                android:paddingLeft="5dp"
+                                android:textColor="#ff8995a0"
+                                android:textColorHint="#ff8995a0"
+                                android:textSize="7sp" />
+
+                            <ImageView
+                                android:id="@+id/iv_delete2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="0dp"
+                                android:paddingLeft="3dp"
+                                android:paddingTop="3dp"
+                                android:paddingBottom="3dp"
+                                android:paddingRight="2dp"
+                                android:src="@mipmap/to_delete" />
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="7dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="3dp"
+                            android:layout_height="3dp"
+                            android:src="@drawable/icon_bitian" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+
+                            android:text="语音识别："
+                            android:textColor="#ff57636f"
+                            android:textSize="7sp" />
+
+
+                        <TextView
+                            android:id="@+id/tvCreateVoice"
+                            android:layout_width="163dp"
+                            android:layout_height="16dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/create_task_ed_shape"
+                            android:drawableRight="@drawable/down_select"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="10dp"
+                            android:text="普通话"
+                            android:textColor="#ff57636f"
+                            android:textColorHint="#ffd4dce3"
+                            android:textSize="7sp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="7dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="3dp"
+                            android:layout_height="3dp"
+                            android:src="@drawable/icon_bitian"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+
+                            android:text="呼叫频率："
+                            android:textColor="#ff57636f"
+                            android:textSize="7sp" />
+
+
+                        <EditText
+                            android:id="@+id/edit_query"
+                            android:layout_width="65dp"
+                            android:layout_height="16dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/create_task_ed_shape"
+                            android:text="0"
+                            android:inputType="number"
+                            android:paddingLeft="5dp"
+                            android:textColor="#ff57636f"
+                            android:textColorHint="#ff57636f"
+                            android:textCursorDrawable="@drawable/color_cursor"
+                            android:textSize="7sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:text="每通电话拨打时间间隔，单位：秒"
+                            android:textColor="#ff8995a0"
+                            android:textSize="7sp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="17dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="3dp"
+                            android:layout_height="3dp"
+                            android:src="@drawable/icon_bitian"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+
+                            android:text="等级条件："
+                            android:textColor="#ff57636f"
+                            android:textSize="7sp" />
+
+
+                        <TextView
+                            android:id="@+id/khLevel"
+                            android:layout_width="100dp"
+                            android:layout_height="16dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/create_task_tv_shape"
+                            android:gravity="center"
+                            android:text="设置客户等级条件"
+                            android:textColor="#ff3ec093"
+                            android:textSize="6sp" />
+
+
+                        <ImageView
+                            android:id="@+id/ivWB6"
+                            android:layout_width="5dp"
+                            android:layout_height="5dp"
+                            android:layout_marginLeft="4dp"
+                            android:src="@drawable/wenhao" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="7dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="3dp"
+                            android:layout_height="3dp"
+                            android:src="@drawable/icon_bitian"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="转接人工："
+                            android:textColor="#ff57636f"
+                            android:textSize="7sp" />
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/box1"
+                                android:layout_width="7dp"
+                                android:layout_height="7dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/check_box_selector"
+                                android:button="@null" />
+
+                            <TextView
+                                android:id="@+id/tv_close"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dp"
+                                android:gravity="center_horizontal"
+                                android:text="关闭"
+                                android:textColor="#ff57636f"
+                                android:textSize="7sp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tvToCame"
+                            android:layout_width="50dp"
+                            android:layout_height="14dp"
+                            android:visibility="gone"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/create_task_btn_shape"
+                            android:gravity="center"
+                            android:text="添加坐席"
+                            android:textColor="#ffffffff"
+                            android:textSize="7sp" />
+
+                        <TextView
+                            android:id="@+id/tvToCard"
+                            android:layout_width="80dp"
+                            android:layout_height="14dp"
+                            android:visibility="gone"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/create_task_btn_shape"
+                            android:gravity="center"
+                            android:text="转接人工条件设置"
+                            android:textColor="#ffffffff"
+                            android:textSize="7sp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="7dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="3dp"
+                                android:layout_height="3dp"
+                                android:src="@drawable/icon_bitian"
+                                android:visibility="invisible" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+
+                                android:text="备       注："
+                                android:textColor="#ff57636f"
+                                android:textSize="7sp" />
+                        </LinearLayout>
+
+                        <EditText
+                            android:id="@+id/edremarks"
+                            android:layout_width="175dp"
+                            android:layout_height="75dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/create_task_ed_shape"
+                            android:hint=""
+                            android:gravity="top|left"
+                            android:padding="3dp"
+                            android:textColor="#ff57636f"
+                            android:textColorHint="#ffd4dce3"
+                            android:textCursorDrawable="@drawable/color_cursor"
+                            android:textSize="7sp" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

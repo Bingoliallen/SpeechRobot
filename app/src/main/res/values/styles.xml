@@ -1,0 +1,112 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="android:windowAnimationStyle">@style/Animation</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:scrollViewStyle">@style/MyScrollViewStyle</item>
+    </style>
+
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/common_base_splash</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="AppTheme.Main">
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <style name="Animation">
+        <item name="android:activityOpenEnterAnimation">@anim/common_activity_slide_from_right
+        </item>
+        <item name="android:activityOpenExitAnimation">@anim/common_activity_slide_to_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/common_activity_slide_from_left
+        </item>
+        <item name="android:activityCloseExitAnimation">@anim/common_activity_slide_to_right</item>
+        <item name="android:taskOpenEnterAnimation">@anim/common_scale_in</item>
+        <item name="android:taskOpenExitAnimation">@anim/common_scale_out</item>
+        <item name="android:taskCloseEnterAnimation">@anim/common_scale_in</item>
+        <item name="android:taskCloseExitAnimation">@anim/common_scale_out</item>
+        <item name="android:taskToFrontEnterAnimation">@anim/common_scale_in</item>
+        <item name="android:taskToFrontExitAnimation">@anim/common_scale_out</item>
+        <item name="android:taskToBackEnterAnimation">@anim/common_scale_in</item>
+        <item name="android:taskToBackExitAnimation">@anim/common_scale_out</item>
+    </style>
+
+    <style name="MyScrollViewStyle" parent="android:Widget.ScrollView">
+        <item name="android:overScrollMode">never</item>
+        <item name="android:scrollbars">none</item>
+    </style>
+
+    <style name="mProgressBar1">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/task_manager_progress_shape</item><!-- progress_horizontal -->
+        <item name="android:indeterminateDrawable">
+            @android:drawable/progress_indeterminate_horizontal
+        </item>
+        <item name="android:minHeight">1dip</item> <!--设置进度条的高度 -->
+        　　　　
+        <item name="android:maxHeight">20dip</item>
+        　　
+    </style>
+
+
+    <style name="LFileTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/lfile_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/lfile_colorPrimaryDark</item>
+        <item name="colorAccent">@color/lfile_colorAccent</item>
+        <item name="homeAsUpIndicator">@mipmap/lfile_back1</item>
+        <item name="actionBarSize">18dp</item>
+        <item name="navigationIcon">@mipmap/lfile_back1</item><!--返回icon-->
+        <!-- 溢出菜单图标颜色-->
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="actionMenuTextColor">@android:color/white</item>
+    </style>
+
+    <!--toolbar 上title的样式-->
+    <style name="LFileToolbarTextStyle" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColor">@color/lfile_white</item>
+        <item name="android:textSize">8sp</item>
+    </style>
+
+    <style name="LFileToolbarTheme" parent="LFileTheme">
+
+    </style>
+
+    <style name="LFileCheckBoxTheme" parent="LFileTheme">
+        <!-- 溢出菜单图标颜色-->
+        <item name="colorControlNormal">@color/lfile_gray</item>
+    </style>
+
+    <style name="LFile_item_text_name">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textColor">#101010</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textSize">8sp</item>
+    </style>
+
+    <style name="LFile_item_text_detail">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:textColor">#999999</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textSize">7sp</item>
+    </style>
+
+    <!-- 右上角popupwindow -->
+    <style name="AnimationPreview">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+
+</resources>

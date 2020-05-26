@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="278dp"
+    android:layout_height="180dp"
+    android:background="@color/common_app_theme2">
+
+    <LinearLayout
+        android:id="@+id/ml_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="通话结束后短信推送"
+            android:textColor="#ff57636f"
+            android:textSize="9sp" />
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginRight="10dp"
+            android:padding="5dp"
+            android:src="@drawable/close" />
+    </LinearLayout>
+
+
+    <ScrollView
+        android:id="@+id/mScrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ml_title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvSwitch10"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/create_task_dialog_tv_shape_p"
+                    android:gravity="center"
+                    android:text="A类客户"
+                    android:textColor="#ff02c1df"
+                    android:textSize="8sp" />
+
+                <TextView
+                    android:id="@+id/tvSwitch20"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/create_task_dialog_tv_shape1"
+                    android:gravity="center"
+                    android:text="B类客户"
+                    android:textColor="#ff57636f"
+                    android:textSize="8sp" />
+
+                <TextView
+                    android:id="@+id/tvSwitch30"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/create_task_dialog_tv_shape2"
+                    android:gravity="center"
+                    android:text="C类客户"
+                    android:textColor="#ff57636f"
+                    android:textSize="8sp" />
+                <!--    <TextView
+                        android:id="@+id/tvSwitch22"
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:gravity="center"
+                        android:background="@drawable/create_task_dialog_tv_shape11"
+                        android:text="D类客户"
+                        android:textColor="#ff57636f"
+                        android:textSize="8sp" />
+
+                    <TextView
+                        android:id="@+id/tvSwitch30"
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:gravity="center"
+                        android:background="@drawable/create_task_dialog_tv_shape2"
+                        android:text="E类客户"
+                        android:textColor="#ff57636f"
+                        android:textSize="8sp" />-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/root_view1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="请选择短信模板"
+                        android:textColor="#ff57636f"
+                        android:textSize="8sp" />
+
+                    <LinearLayout
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/box1"
+                            android:layout_width="7dp"
+                            android:layout_height="7dp"
+                            android:background="@drawable/check_box_selector"
+                            android:button="@null" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:text="设置为默认"
+                            android:textColor="#ff02c1df"
+                            android:textSize="8sp" />
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:id="@+id/ivMR1"
+                        android:layout_width="5dp"
+                        android:layout_height="5dp"
+                        android:layout_marginLeft="4dp"
+                        android:src="@drawable/wenhao" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="注：未选择则不发送信息，选择模板后则启用该功能。"
+                    android:textColor="#ff8995a0"
+                    android:textSize="7sp" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="left"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_weight="1"
+                    android:paddingBottom="0dp" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/root_view2"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="请选择销售人员"
+                        android:textColor="#ff57636f"
+                        android:textSize="8sp" />
+
+                    <LinearLayout
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/box2"
+                            android:layout_width="7dp"
+                            android:layout_height="7dp"
+                            android:background="@drawable/check_box_selector"
+                            android:button="@null" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:text="设置为默认"
+                            android:textColor="#ff02c1df"
+                            android:textSize="8sp" />
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:id="@+id/ivMR2"
+                        android:layout_width="5dp"
+                        android:layout_height="5dp"
+                        android:layout_marginLeft="4dp"
+                        android:src="@drawable/wenhao" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="注：未选择则不发送信息，选择模板后则启用该功能。"
+                    android:textColor="#ff8995a0"
+                    android:textSize="7sp" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="left"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_weight="1"
+                    android:paddingBottom="0dp" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/root_view3"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="请选择销售人员"
+                        android:textColor="#ff57636f"
+                        android:textSize="8sp" />
+
+                    <LinearLayout
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/box3"
+                            android:layout_width="7dp"
+                            android:layout_height="7dp"
+                            android:background="@drawable/check_box_selector"
+                            android:button="@null" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:text="设置为默认"
+                            android:textColor="#ff02c1df"
+                            android:textSize="8sp" />
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:id="@+id/ivMR3"
+                        android:layout_width="5dp"
+                        android:layout_height="5dp"
+                        android:layout_marginLeft="4dp"
+                        android:src="@drawable/wenhao" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="注：未选择则不发送信息，选择模板后则启用该功能。"
+                    android:textColor="#ff8995a0"
+                    android:textSize="7sp" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="left"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_weight="1"
+                    android:paddingBottom="0dp" />
+            </LinearLayout>
+
+
+
+
+
+            <!--
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="6dp"
+                            android:paddingBottom="0dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/tvSwitch1"
+                                android:layout_width="60dp"
+                                android:layout_height="40dp"
+                                android:gravity="center"
+                                android:background="@drawable/create_task_dialog_msg_mode_item_shape"
+                                android:text="销售人员A"
+                                android:textColor="#ff56626e"
+                                android:textSize="8sp"
+                                />
+
+                            <TextView
+                                android:id="@+id/tvSwitch2"
+                                android:background="@drawable/create_task_dialog_msg_mode_item_shape1"
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="60dp"
+                                android:gravity="center"
+                                android:layout_height="40dp"
+                                android:text="销售人员B"
+                                android:textColor="#ff56626e"
+                                android:textSize="8sp"
+                                />
+                            <TextView
+                                android:id="@+id/tvSwitch3"
+                                android:background="@drawable/create_task_dialog_msg_mode_item_shape1"
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="60dp"
+                                android:gravity="center"
+                                android:layout_height="40dp"
+                                android:text="销售人员C"
+                                android:textColor="#ff56626e"
+                                android:textSize="8sp"
+                                />
+                        </LinearLayout>
+            -->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_cancel"
+                    android:layout_width="30dp"
+                    android:layout_height="16dp"
+                    android:background="@drawable/create_task_dialog_btn_cancle"
+                    android:gravity="center"
+                    android:text="取消"
+                    android:textColor="#ff8995a0"
+                    android:textSize="7sp" />
+
+                <TextView
+                    android:id="@+id/tv_ok"
+                    android:layout_width="30dp"
+                    android:layout_height="16dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/create_task_dialog_btn_ok"
+                    android:gravity="center"
+                    android:text="确定"
+                    android:textColor="#ffffffff"
+                    android:textSize="7sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head style="height:100%;">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="height: 100%; margin: 0">
+<div id="container">
+  <script type="text/javascript">
+    var containerDom = document.getElementById('container');
+    containerDom.style.width = window.innerWidth+'px';
+    containerDom.style.height = window.innerHeight+'px';
+  </script>
+</div>
+<script src="./echarts.min.js"></script>
+<script type="text/javascript">
+  var containerDom = document.getElementById('container');
+  var myChart = echarts.init(containerDom);
+  var app = {};
+  function loadEcharts(echartJson){
+      var option = JSON.parse(echartJson);
+      myChart.setOption(option);
+  }
+</script>
+</body>
+</html>

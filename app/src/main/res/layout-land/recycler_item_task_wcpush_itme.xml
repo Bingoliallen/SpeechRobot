@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_item"
+        android:layout_width="45dp"
+        android:layout_height="25dp"
+        android:layout_marginRight="0dp"
+        android:background="@drawable/create_task_dialog_item_shape1"
+        android:text="周杰伦"
+        android:gravity="center"
+        android:textColor="#ff57636f"
+        android:textSize="6sp" />
+</LinearLayout>

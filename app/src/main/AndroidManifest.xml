@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.vma.speechrobot">
+
+    <application
+        android:name=".SpeechRobotApplication"
+        android:icon="@mipmap/logoz"
+        android:label="${app_name}"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:label">
+        <activity
+            android:name=".view.activity.SplashActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/SplashTheme" />
+
+        <activity android:name=".view.activity.Main2Activity"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:configChanges="orientation|screenSize|keyboardHidden|fontScale">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lsh.packagelibrary.WebTwoActivity"
+            android:configChanges="orientation|screenSize"
+            android:hardwareAccelerated="true">
+        </activity>
+
+
+        <activity
+            android:name=".view.activity.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:configChanges="orientation|screenSize|keyboardHidden|fontScale">
+          <!--  <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        </activity>
+        <activity
+            android:name=".view.activity.LoginActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".view.activity.ForgetActivity"
+            android:screenOrientation="landscape" />
+
+
+
+
+        <receiver android:name=".receiver.DownloadReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+                <action android:name="android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="name,authorities,exported,grantUriPermissions">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"
+                tools:replace="name,resource" />
+        </provider>
+
+        <activity
+            android:name=".view.activity.CreateTaskActivity"
+            android:screenOrientation="landscape"
+            android:configChanges="orientation|screenSize|keyboardHidden|fontScale"/>
+        <activity android:name=".view.activity.CallRecordActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".view.activity.TaskManagerNewActivity"
+            android:screenOrientation="landscape"
+            android:configChanges="orientation|screenSize|keyboardHidden|fontScale"></activity>
+
+        <activity android:name=".view.activity.CallDetailNewActivity"
+            android:screenOrientation="landscape"
+            android:configChanges="orientation|screenSize|keyboardHidden|fontScale"></activity>
+
+        <activity android:name=".LFile.LFilePickerActivityT"
+            android:screenOrientation="landscape"
+            android:configChanges="orientation|screenSize|keyboardHidden|fontScale"></activity>
+
+
+    </application>
+
+</manifest>

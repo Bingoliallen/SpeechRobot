@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!--common title bar view-->
+  <declare-styleable name="TitleBarView">
+    <attr format="string" name="title" />
+    <attr format="color" name="title_text_color" />
+    <attr format="boolean" name="title_text_bold" />
+    <attr format="dimension" name="title_text_size" />
+
+    <attr format="dimension" name="left_width" />
+    <attr format="dimension" name="left_height" />
+    <attr format="string" name="left_text" />
+    <attr format="boolean" name="left_text_bold" />
+    <attr format="dimension" name="left_text_size" />
+    <attr format="color" name="left_text_color" />
+    <attr format="reference" name="left_drawable" />
+    <attr format="dimension" name="left_drawable_width" />
+    <attr format="dimension" name="left_drawable_height" />
+    <attr format="color" name="left_drawable_color" />
+
+    <attr format="dimension" name="right_width" />
+    <attr format="dimension" name="right_height" />
+    <attr format="string" name="right_text" />
+    <attr format="boolean" name="right_text_bold" />
+    <attr format="dimension" name="right_text_size" />
+    <attr format="color" name="right_text_color" />
+    <attr format="reference" name="right_drawable" />
+    <attr format="dimension" name="right_drawable_width" />
+    <attr format="dimension" name="right_drawable_height" />
+    <attr format="color" name="right_drawable_color" />
+  </declare-styleable>
+
+  <!--common indicator view pager-->
+  <declare-styleable name="ViewPagerIndicator">
+    <attr format="integer" name="visible_tab_count" />
+    <attr format="dimension" name="item_padding" />
+    <attr format="color" name="paint_color" />
+    <attr format="color" name="text_color_normal" />
+    <attr format="color" name="text_color_highlight" />
+    <attr format="dimension" name="text_size_normal" />
+    <attr format="dimension" name="text_size_highlight" />
+  </declare-styleable>
+
+  <!--common nav view-->
+  <declare-styleable name="NavView">
+    <attr format="dimension" name="itemsTextSize" />
+    <attr format="color" name="text_color" />
+  </declare-styleable>
+
+  <!--common taobao view-->
+  <declare-styleable name="TaobaoView">
+    <attr format="color" name="ringProgressColor" />
+    <attr format="dimension" name="ringWidth" />
+    <attr format="integer" name="ringmax" />
+  </declare-styleable>
+
+  <!--星星评分控件-->
+  <declare-styleable name="StarBarView">
+    <!--设置星星间的间隔-->
+    <attr format="dimension" name="space_width" />
+    <!--星星间宽度-->
+    <attr format="dimension" name="star_width" />
+    <!--星星间高度-->
+    <attr format="dimension" name="star_height" />
+    <!--最大数量-->
+    <attr format="integer" name="star_max" />
+    <!--选中数量-->
+    <attr format="float" name="star_rating" />
+    <!--未选中图片-->
+    <attr format="reference" name="star_hollow" />
+    <!--选中图片-->
+    <attr format="reference" name="star_solid" />
+    <!--是否可以滑动改变选中数量-->
+    <attr format="boolean" name="star_isIndicator" />
+    <!--排列方向-->
+    <attr format="enum" name="star_orientation">
+      <enum name="vertical" value="1" />
+      <enum name="horizontal" value="0" />
+    </attr>
+  </declare-styleable>
+</resources>

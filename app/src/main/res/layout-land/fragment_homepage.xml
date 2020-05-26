@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_app_theme6"
+    android:orientation="vertical">
+
+    <com.example.common.widget.TitleBarView
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="#373E41"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        app:left_drawable="@drawable/nav"
+        app:left_drawable_height="10dp"
+        app:left_drawable_width="12dp"
+        app:left_height="10dp"
+        app:left_text_size="8sp"
+        app:left_width="10dp"
+        app:title="@string/homepage_title"
+        app:title_text_color="#ffffffff"
+        app:title_text_size="10sp" />
+
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="blocksDescendants"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/main_num_bg"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_num11"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/main_num_shape"
+                        android:text="0"
+                        android:textColor="#ffffffff"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_num10"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/main_num_shape"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#ffffffff"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_num9"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/main_num_shape"
+
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#ffffffff"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_num8"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/main_num_shape"
+
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#ffffffff"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_num7"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/main_num_shape"
+
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#ffffffff"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_num6"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/main_num_shape"
+
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#ffffffff"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_num5"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/main_num_shape"
+                        android:gravity="center"
+                        android:text="0"
+
+                        android:textColor="#ffffffff"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_num4"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/main_num_shape"
+
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#ffffffff"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_num3"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/main_num_shape"
+                        android:gravity="center"
+                        android:text="0"
+
+                        android:textColor="#ffffffff"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_num2"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/main_num_shape"
+
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#ffffffff"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_num1"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/main_num_shape"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#ffffffff"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/main_num_bg"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="0dp"
+                            android:id="@+id/taskNum"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:layout_weight="1" />
+                        <TextView
+                            android:layout_marginRight="0dp"
+                            android:id="@+id/taskingNum"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:layout_marginRight="0dp"
+                            android:id="@+id/rebootNum"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:layout_marginRight="5dp"
+                            android:id="@+id/msgNum"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:layout_weight="1" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/main_num_bg"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_marginTop="4dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="4dp"
+                                android:layout_height="4dp"
+                                android:layout_marginLeft="4dp"
+                                android:src="@drawable/kuaijie"/>
+                        <TextView
+                            android:gravity="center_vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="快捷功能"
+                            android:paddingLeft="2dp"
+                            android:textColor="#ff57636f"
+                            android:textSize="4sp"
+                            />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/tvSpeed1"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="15dp"
+                                android:text="任务管理"
+                                android:textColor="#ffffffff"
+                                android:textSize="6sp"
+                                android:background="@drawable/main_q_bg"
+                                />
+
+                            <TextView
+                                android:id="@+id/tvSpeed2"
+                                android:layout_marginRight="10dp"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="15dp"
+                                android:text="呼叫记录"
+                                android:gravity="center"
+                                android:textColor="#ffffffff"
+                                android:textSize="6sp"
+                                android:background="@drawable/main_q_bg"
+                                />
+                            <TextView
+                                android:id="@+id/tvSpeed3"
+                                android:layout_marginRight="5dp"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="15dp"
+                                android:text="创建任务"
+                                android:gravity="center"
+                                android:textColor="#ffffffff"
+                                android:textSize="6sp"
+                                android:background="@drawable/main_q_bg"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="102dp"
+                     android:layout_marginTop="4dp"
+                     android:layout_marginLeft="5dp"
+                     android:layout_marginRight="5dp"
+                     android:orientation="horizontal">
+                     <RelativeLayout
+                         android:layout_width="0dp"
+                         android:layout_weight="1"
+                         android:background="@drawable/main_num_bg"
+                         android:padding="2dp"
+                         android:layout_height="match_parent">
+                         <com.vma.speechrobot.widget.echarts.EchartView
+                             android:id="@+id/lineChart"
+                             android:layout_marginLeft="5dp"
+                             android:paddingLeft="15dp"
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent"
+                             android:gravity="top|right"
+                             android:layout_gravity="top|right">
+                         </com.vma.speechrobot.widget.echarts.EchartView>
+                         <LinearLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:layout_alignParentLeft="true"
+                             android:gravity="center_vertical"
+                             android:layout_gravity="center_vertical"
+                             android:layout_marginTop="4dp"
+                             android:orientation="horizontal">
+                             <ImageView
+                                 android:layout_width="4dp"
+                                 android:layout_height="4dp"
+                                 android:layout_marginLeft="4dp"
+                                 android:src="@drawable/bohao"/>
+                             <TextView
+                                 android:layout_width="0dp"
+                                 android:layout_weight="4.5"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center_vertical"
+                                 android:layout_gravity="center_vertical"
+                                 android:text="拨号数据"
+                                 android:singleLine="true"
+                                 android:paddingLeft="2dp"
+                                 android:textColor="#ff57636f"
+                                 android:textSize="4sp"/>
+
+                             <TextView
+                                 android:id="@+id/tv_Time1"
+                                 android:layout_width="0dp"
+                                 android:layout_height="10dp"
+                                 android:layout_weight="1"
+                                 android:background="@drawable/selector_time_type"
+                                 android:text="7天"
+                                 android:gravity="center"
+                                 android:textColor="@color/selector_home_baohao"
+                                 android:textSize="4sp"
+                                 />
+                             <TextView
+                                 android:id="@+id/tv_Time2"
+                                 android:layout_width="0dp"
+                                 android:layout_height="10dp"
+                                 android:layout_weight="1"
+                                 android:background="@drawable/selector_time_type"
+                                 android:gravity="center"
+                                 android:text="30天"
+                                 android:textColor="@color/selector_home_baohao"
+                                 android:textSize="4sp"
+                                 />
+
+
+                             <TextView
+                                 android:id="@+id/tv_Time3"
+                                 android:layout_width="0dp"
+                                 android:layout_height="10dp"
+                                 android:layout_weight="1"
+                                 android:gravity="center"
+                                 android:background="@drawable/selector_time_type"
+                                 android:text="1年"
+                                 android:textColor="@color/selector_home_baohao"
+                                 android:textSize="4sp"
+                                 />
+                         </LinearLayout>
+                         <!--<LinearLayout
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_marginTop="4dp"
+                             android:layout_alignParentRight="true"
+                             android:orientation="horizontal">
+
+
+                         </LinearLayout>-->
+                     </RelativeLayout>
+                     <RelativeLayout
+                         android:id="@+id/mLiner1"
+                         android:layout_width="0dp"
+                         android:layout_weight="1"
+                         android:layout_marginLeft="3dp"
+                         android:padding="2dp"
+                         android:background="@drawable/main_num_bg"
+                         android:layout_height="match_parent"
+                         android:orientation="vertical">
+                         <com.vma.speechrobot.widget.echarts.EchartView
+                             android:id="@+id/lineChart1"
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent"
+                             android:layout_gravity="center">
+                         </com.vma.speechrobot.widget.echarts.EchartView>
+                         <LinearLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:layout_alignParentLeft="true"
+                             android:gravity="center_vertical"
+                             android:layout_gravity="center_vertical"
+                             android:layout_marginTop="4dp"
+                             android:orientation="horizontal">
+                             <ImageView
+                                 android:layout_width="4dp"
+                                 android:layout_height="4dp"
+                                 android:layout_marginLeft="4dp"
+                                 android:src="@drawable/kehu"/>
+                             <TextView
+                                 android:layout_width="0dp"
+                                 android:layout_weight="4.5"
+                                 android:layout_height="wrap_content"
+                                 android:gravity="center_vertical"
+                                 android:layout_gravity="center_vertical"
+                                 android:text="客户等级占比"
+                                 android:paddingLeft="2dp"
+                                 android:textColor="#ff57636f"
+                                 android:textSize="4sp"/>
+
+
+                             <TextView
+                                 android:id="@+id/tv_Time4"
+                                 android:layout_width="10dp"
+                                 android:layout_height="10dp"
+                                 android:layout_weight="1"
+                                 android:background="@drawable/selector_time_type"
+                                 android:text="7天"
+                                 android:gravity="center"
+                                 android:textColor="@color/selector_home_baohao"
+                                 android:textSize="4sp"
+                                 />
+                             <TextView
+                                 android:id="@+id/tv_Time5"
+                                 android:layout_width="10dp"
+                                 android:layout_height="10dp"
+                                 android:layout_weight="1"
+                                 android:background="@drawable/selector_time_type"
+                                 android:gravity="center"
+                                 android:text="30天"
+                                 android:textColor="@color/selector_home_baohao"
+                                 android:textSize="4sp"
+                                 />
+
+
+                             <TextView
+                                 android:id="@+id/tv_Time6"
+                                 android:layout_width="10dp"
+                                 android:layout_height="10dp"
+                                 android:layout_weight="1"
+                                 android:gravity="center"
+                                 android:background="@drawable/selector_time_type"
+                                 android:text="1年"
+                                 android:textColor="@color/selector_home_baohao"
+                                 android:textSize="4sp"
+                                 />
+                         </LinearLayout>
+<!--
+                         <LinearLayout
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_marginTop="4dp"
+                             android:layout_alignParentRight="true"
+                             android:orientation="horizontal">
+
+
+                         </LinearLayout>
+-->
+                     </RelativeLayout>
+                 </LinearLayout>
+<!--
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/cl1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_call_sum"
+                        android:layout_width="0dp"
+                        android:layout_height="115dp"
+                        android:layout_margin="10dp"
+                        android:background="@color/common_app_theme2"
+                        android:gravity="center"
+                        android:textColor="@color/common_app_text_theme3"
+                        android:textSize="@dimen/text_size3"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:id="@+id/view1"
+                        android:layout_width="0dp"
+                        android:layout_height="225dp"
+                        android:layout_margin="10dp"
+                        android:background="@color/common_app_theme2"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_call_sum" />
+
+                    <TextView
+                        android:id="@+id/tv_task_sum"
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:layout_marginEnd="19dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/round5_app_theme3_4"
+                        android:gravity="center"
+                        android:textColor="@color/common_app_text_theme4"
+                        android:textSize="@dimen/text_size5"
+                        android:translationZ="4dp"
+                        app:layout_constraintLeft_toLeftOf="@+id/view1"
+                        app:layout_constraintRight_toLeftOf="@+id/tv_tasking_sum"
+                        app:layout_constraintTop_toTopOf="@+id/view1" />
+
+                    <TextView
+                        android:id="@+id/tv_tasking_sum"
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@drawable/round5_app_theme3_4"
+                        android:gravity="center"
+                        android:textColor="@color/common_app_text_theme4"
+                        android:textSize="@dimen/text_size5"
+                        android:translationZ="4dp"
+                        app:layout_constraintLeft_toRightOf="@+id/tv_task_sum"
+                        app:layout_constraintRight_toRightOf="@+id/view1"
+                        app:layout_constraintTop_toTopOf="@+id/tv_task_sum" />
+
+                    <TextView
+                        android:id="@+id/tv_message_sum"
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginEnd="19dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="25dp"
+                        android:background="@drawable/round5_app_theme3_4"
+                        android:gravity="center"
+                        android:textColor="@color/common_app_text_theme4"
+                        android:textSize="@dimen/text_size5"
+                        android:translationZ="4dp"
+                        app:layout_constraintLeft_toLeftOf="@+id/view1"
+                        app:layout_constraintRight_toLeftOf="@+id/tv_robot_sum"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_task_sum" />
+
+                    <TextView
+                        android:id="@+id/tv_robot_sum"
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@drawable/round5_app_theme3_4"
+                        android:gravity="center"
+                        android:textColor="@color/common_app_text_theme4"
+                        android:textSize="@dimen/text_size5"
+                        android:translationZ="4dp"
+                        app:layout_constraintLeft_toRightOf="@+id/tv_message_sum"
+                        app:layout_constraintRight_toRightOf="@+id/view1"
+                        app:layout_constraintTop_toTopOf="@+id/tv_message_sum" />
+
+                    <View
+                        android:id="@+id/view2"
+                        android:layout_width="0dp"
+                        android:layout_height="310dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/common_app_theme2"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/view1" />
+                    &lt;!&ndash;<TextView&ndash;&gt;
+                    &lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;
+                    &lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;
+                    &lt;!&ndash;android:layout_marginTop="20dp"&ndash;&gt;
+                    &lt;!&ndash;android:text="@string/homepage_pie_title"&ndash;&gt;
+                    &lt;!&ndash;android:textColor="@color/common_app_text_theme3"&ndash;&gt;
+                    &lt;!&ndash;android:textSize="@dimen/text_size3"&ndash;&gt;
+                    &lt;!&ndash;app:layout_constraintLeft_toLeftOf="parent"&ndash;&gt;
+                    &lt;!&ndash;app:layout_constraintRight_toRightOf="parent"&ndash;&gt;
+                    &lt;!&ndash;app:layout_constraintTop_toTopOf="@+id/view2" />&ndash;&gt;
+                    &lt;!&ndash;<com.vma.speechrobot.widget.PieChartView&ndash;&gt;
+                    &lt;!&ndash;android:id="@+id/pie_view"&ndash;&gt;
+                    &lt;!&ndash;android:layout_width="0dp"&ndash;&gt;
+                    &lt;!&ndash;android:layout_height="170dp"&ndash;&gt;
+                    &lt;!&ndash;android:layout_marginTop="56dp"&ndash;&gt;
+                    &lt;!&ndash;app:circleRadius="75dp"&ndash;&gt;
+                    &lt;!&ndash;app:layout_constraintLeft_toLeftOf="parent"&ndash;&gt;
+                    &lt;!&ndash;app:layout_constraintRight_toRightOf="parent"&ndash;&gt;
+                    &lt;!&ndash;app:layout_constraintTop_toTopOf="@+id/view2"&ndash;&gt;
+                    &lt;!&ndash;app:textSize="@dimen/text_size10" />&ndash;&gt;
+                    &lt;!&ndash;<android.support.v7.widget.RecyclerView&ndash;&gt;
+                    &lt;!&ndash;android:id="@+id/recycler_view_color"&ndash;&gt;
+                    &lt;!&ndash;android:layout_width="0dp"&ndash;&gt;
+                    &lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;
+                    &lt;!&ndash;android:layout_marginTop="15dp"&ndash;&gt;
+                    &lt;!&ndash;android:layout_marginLeft="10dp"&ndash;&gt;
+                    &lt;!&ndash;android:layout_marginRight="10dp"&ndash;&gt;
+                    &lt;!&ndash;android:paddingBottom="10dp"&ndash;&gt;
+                    &lt;!&ndash;app:layout_constraintLeft_toLeftOf="parent"&ndash;&gt;
+                    &lt;!&ndash;app:layout_constraintRight_toRightOf="parent"&ndash;&gt;
+                    &lt;!&ndash;app:layout_constraintTop_toBottomOf="@+id/pie_view" />&ndash;&gt;
+                    &lt;!&ndash;<com.vma.speechrobot.widget.echarts.EchartFactoryory&ndash;&gt;
+                    &lt;!&ndash;android:id="@+id/pieChart"&ndash;&gt;
+                    &lt;!&ndash;android:layout_width="0dp"&ndash;&gt;
+                    &lt;!&ndash;android:layout_height="275dp"&ndash;&gt;
+                    &lt;!&ndash;android:layout_marginTop="20dp"&ndash;&gt;
+                    &lt;!&ndash;android:layout_marginLeft="10dp"&ndash;&gt;
+                    &lt;!&ndash;android:layout_marginRight="10dp"&ndash;&gt;
+                    &lt;!&ndash;android:layout_gravity="center"&ndash;&gt;
+                    &lt;!&ndash;app:layout_constraintLeft_toLeftOf="parent"&ndash;&gt;
+                    &lt;!&ndash;app:layout_constraintRight_toRightOf="parent"&ndash;&gt;
+                    &lt;!&ndash;app:layout_constraintTop_toTopOf="@+id/view2" />&ndash;&gt;
+                </android.support.constraint.ConstraintLayout>
+-->
+
+            </LinearLayout>
+        </ScrollView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

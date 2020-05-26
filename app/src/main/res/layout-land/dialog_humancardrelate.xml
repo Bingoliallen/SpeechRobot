@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="310dp"
+    android:layout_height="217dp"
+    android:orientation="vertical"
+    android:background="@color/common_app_theme2">
+
+    <LinearLayout
+        android:id="@+id/ml_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="0dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="转接人坐席工设置"
+            android:textColor="#ff57636f"
+            android:textSize="9sp"/>
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginRight="10dp"
+            android:padding="5dp"
+            android:src="@drawable/close" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/tvCust"
+            android:layout_marginTop="0dp"
+            android:layout_width="40dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center_vertical|right"
+            android:background="@drawable/create_task_dialog_btn_ok"
+            android:gravity="center"
+            android:text="添加坐席"
+            android:textColor="#ffffffff"
+            android:textSize="7sp" />
+
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="#fff2f5f8">
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="序号"
+                android:textColor="#ff8995a1"
+                android:textSize="8sp"/>
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="销售人员"
+                android:textColor="#ff8995a1"
+                android:textSize="8sp"
+                />
+            <TextView
+                android:layout_marginLeft="0dp"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="人工坐席"
+                android:textColor="#ff8995a1"
+                android:textSize="8sp"
+                />
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="操作"
+                android:textColor="#ff8995a1"
+                android:textSize="8sp"
+                />
+        </LinearLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="370dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="left"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="0dp"
+            android:paddingBottom="0dp"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="30dp"
+                android:layout_height="16dp"
+                android:background="@drawable/create_task_dialog_btn_cancle"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="#ff8995a0"
+                android:textSize="7sp" />
+
+            <TextView
+                android:id="@+id/tv_ok"
+                android:layout_width="30dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/create_task_dialog_btn_ok"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="#ffffffff"
+                android:textSize="7sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

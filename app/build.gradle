@@ -1,0 +1,136 @@
+apply plugin: 'com.android.application'
+
+def keystorePropertiesFile = rootProject.file("keystore.properties")
+def keystoreProperties = new Properties()
+keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+
+def commonPropertiesFile = rootProject.file("common.properties")
+def commonProperties = new Properties()
+commonProperties.load(new FileInputStream(commonPropertiesFile))
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId commonProperties["application_id"]
+        minSdkVersion 19
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        ndk {
+            // 设置支持的SO库架构
+            abiFilters 'armeabi', 'x86'//, 'armeabi-v7a', 'x86_64', 'arm64-v8a'
+        }
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [eventBusIndex: 'com.vma.speechrobot.MyEventBusIndex']
+            }
+        }
+
+        manifestPlaceholders = [
+                app_name: commonProperties['app_name']
+        ]
+        resValue "string", "login_title", commonProperties["login_title"]
+
+        multiDexEnabled true
+    }
+
+    sourceSets {
+        main {
+            // 设置Jni so文件路径 如果有jniLibs目录就不需要设置，好像手动创建的 jniLibs目录无效
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    signingConfigs {
+        release {
+            storeFile file(keystoreProperties['storeFile'])
+            storePassword keystoreProperties['storePassword']
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+        }
+        debug {
+            storeFile file(keystoreProperties['storeFile'])
+            storePassword keystoreProperties['storePassword']
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+        }
+    }
+
+  /*  dexOptions {
+        maxProcessCount 8
+        javaMaxHeapSize "4g"
+      //  preDexLibraries true
+    }*/
+
+    lintOptions {
+        abortOnError false
+        checkReleaseBuilds false
+        disable 'GoogleAppIndexingWarning'
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.debug
+            minifyEnabled false     // 混淆
+            proguardFiles 'proguard-rules.pro'
+        }
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled true      // 混淆
+            zipAlignEnabled true    // Zipalign优化
+            shrinkResources true    // 移除无用的resource文件
+            proguardFiles 'proguard-rules.pro'
+        }
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = defaultConfig.applicationId + "_v" + defaultConfig.versionName + "_" + variant.buildType.name + ".apk"
+        }
+    }
+    //指定jdk版本
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    compile 'com.android.support:appcompat-v7:27.+'
+    implementation 'com.android.support:design:27.1.+'
+
+    implementation project(':common')
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    annotationProcessor 'org.greenrobot:eventbus-annotation-processor:3.1.1'
+
+    implementation 'com.devbrackets.android:exomedia:4.2.1'
+    implementation 'com.github.abel533:ECharts:3.0.0.4'
+    // implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0-alpha'
+   // implementation 'com.wdullaer:materialdatetimepicker:4.1.0'
+    implementation 'de.hdodenhof:circleimageview:2.1.0'
+
+    implementation 'com.brucetoo.pickview:library:1.2.3'
+
+    implementation 'com.github.zhouzhuo810:ZzExcelCreator:1.0.6'
+    compile 'com.leon:lfilepickerlibrary:1.8.0'
+    implementation files('libs/poi-4.0.1.jar')
+
+   // api 'com.facebook.stetho:stetho-okhttp:1.5.0' // 使用okhttp作为网络底层库
+   // api 'com.facebook.stetho:stetho-urlconnection:1.5.0' // 使用urlconnection作为网络底层库
+
+
+    debugApi 'com.facebook.stetho:stetho-okhttp:1.5.0' // 使用okhttp作为网络底层库
+    debugApi 'com.facebook.stetho:stetho-urlconnection:1.5.0' // 使用urlconnection作为网络底层库
+
+    implementation "com.github.adone123:AbcDef:1.05"
+
+}

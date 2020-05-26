@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <dimen name="text_size1">24sp</dimen>
+  <dimen name="text_size2">18sp</dimen>
+  <dimen name="text_size3">17sp</dimen>
+  <dimen name="text_size4">16sp</dimen>
+  <dimen name="text_size5">15sp</dimen>
+  <dimen name="text_size6">14sp</dimen>
+  <dimen name="text_size7">13sp</dimen>
+  <dimen name="text_size8">12sp</dimen>
+  <dimen name="text_size9">11sp</dimen>
+  <dimen name="text_size10">9sp</dimen>
+
+  <!--common image source dialog-->
+  <dimen name="common_image_source_dialog_title_height">45dp</dimen>
+  <dimen name="common_image_source_dialog_item_height">50dp</dimen>
+  <dimen name="common_image_source_dialog_text_size">18sp</dimen>
+
+  <dimen name="common_nav_height">49dp</dimen>
+  <dimen name="title_bar_height">48dp</dimen>
+  <dimen name="divider_thick">2dp</dimen>
+  <dimen name="divider_thin">1px</dimen>
+</resources>

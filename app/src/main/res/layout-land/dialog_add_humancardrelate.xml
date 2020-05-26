@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="210dp"
+    android:layout_height="100dp"
+    android:orientation="vertical"
+    android:background="@color/common_app_theme2">
+
+    <LinearLayout
+        android:id="@+id/ml_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="0dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="添加人工坐席"
+            android:textColor="#ff57636f"
+            android:textSize="9sp"/>
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginRight="10dp"
+            android:padding="5dp"
+            android:src="@drawable/close" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="0dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="3dp"
+                android:layout_height="3dp"
+                android:src="@drawable/icon_bitian" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+
+                android:text="人工坐席："
+                android:textColor="#ff57636f"
+                android:textSize="7sp" />
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="16dp"
+                android:layout_marginTop="0dp">
+                <com.vma.speechrobot.widget.CustomSpinner
+                    android:id="@+id/sp_register_zkzt1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:spinnerMode="dialog"/>
+
+                <TextView
+                    android:id="@+id/tvCust1"
+                    android:background="@drawable/create_task_ed_shape"
+                    android:drawableRight="@drawable/down_select"
+                    android:paddingRight="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:hint="请选择人工坐席"
+                    android:singleLine="true"
+                    android:paddingLeft="5dp"
+                    android:textColor="#ff57636f"
+                    android:textColorHint="#ff57636f"
+                    android:textSize="7sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="3dp"
+                android:layout_height="3dp"
+                android:src="@drawable/icon_bitian" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+
+                android:text="销售人员："
+                android:textColor="#ff57636f"
+                android:textSize="7sp" />
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="16dp">
+                <com.vma.speechrobot.widget.CustomSpinner
+                    android:id="@+id/sp_register_zkzt2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:spinnerMode="dialog"/>
+
+                <TextView
+                    android:id="@+id/tvCust2"
+                    android:background="@drawable/create_task_ed_shape"
+                    android:drawableRight="@drawable/down_select"
+                    android:paddingRight="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:hint="请选择销售人员"
+                    android:singleLine="true"
+                    android:paddingLeft="5dp"
+                    android:textColor="#ff57636f"
+                    android:textColorHint="#ff57636f"
+                    android:textSize="7sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="30dp"
+                android:layout_height="16dp"
+                android:background="@drawable/create_task_dialog_btn_cancle"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="#ff8995a0"
+                android:textSize="7sp" />
+
+            <TextView
+                android:id="@+id/tv_ok"
+                android:layout_width="30dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/create_task_dialog_btn_ok"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="#ffffffff"
+                android:textSize="7sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

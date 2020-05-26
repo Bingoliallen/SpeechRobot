@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="190dp"
+    android:layout_height="210dp"
+    android:orientation="vertical"
+    android:background="@color/common_app_theme2">
+
+<!--
+    <LinearLayout
+        android:id="@+id/ml_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="0dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="外呼号码"
+            android:textColor="#ff57636f"
+            android:textSize="9sp"/>
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginRight="10dp"
+            android:padding="5dp"
+            android:src="@drawable/close" />
+    </LinearLayout>
+-->
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/mEditText"
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:background="@drawable/create_task_dialog_ed_half_shape1"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:gravity="center_vertical"
+            android:hint="请输入外呼号码进行搜索"
+            android:inputType="number"
+            android:singleLine="true"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="#ff57636f"
+            android:textColorHint="#ffd4dce3"
+            android:textSize="7sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:background="@drawable/create_task_dialog_listview_shape"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="left"
+            android:paddingTop="6dp"
+            android:paddingRight="0dp"
+            android:paddingBottom="6dp"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:background="@drawable/create_task_dialog_ed_half_shape2"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_marginLeft="5dp"
+                android:id="@+id/iv_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/danxuan" />
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ff57636f"
+                android:textSize="7sp"
+                android:text="全选"/>
+            <TextView
+                android:id="@+id/tvSelect"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="right"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="#ff8995a0"
+                android:textSize="7sp"
+                android:text="已选择0个"/>
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="30dp"
+                android:layout_height="16dp"
+                android:background="@drawable/create_task_dialog_btn_cancle"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="#ff8995a0"
+                android:textSize="7sp" />
+
+            <TextView
+                android:id="@+id/tv_ok"
+                android:layout_width="30dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/create_task_dialog_btn_ok"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="#ffffffff"
+                android:textSize="7sp" />
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+    <!-- <ScrollView
+         android:id="@+id/mScrollView"
+         android:layout_width="0dp"
+         android:layout_height="0dp"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintLeft_toLeftOf="parent"
+         app:layout_constraintRight_toRightOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/ml_title">
+
+     </ScrollView>-->
+
+</LinearLayout>

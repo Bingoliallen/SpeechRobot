@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tvSwitch1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginRight="0dp"
+        android:gravity="center"
+        android:background="@drawable/create_task_dialog_msg_mode_item_shape"
+        android:text="销售人员A"
+        android:textColor="#ff56626e"
+        android:textSize="6sp"
+        />
+
+</LinearLayout>

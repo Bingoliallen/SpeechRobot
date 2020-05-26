@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <declare-styleable name="PieChartView">
+    <attr format="dimension" name="circleRadius" />
+    <attr format="dimension" name="textSize" />
+    <attr format="color|reference" name="exampleDrawable" />
+  </declare-styleable>
+
+  <declare-styleable name="ExpandableLinearLayout">
+    <!--默认显示的条目数-->
+    <attr format="integer" name="defaultItemCount" />
+    <!--提示文字的大小-->
+    <attr format="dimension" name="tipTextSize" />
+    <!--字体颜色-->
+    <attr format="color" name="tipTextColor" />
+    <!--待展开的文字提示-->
+    <attr format="string" name="expandText" />
+    <!--待收起时的文字提示-->
+    <attr format="string" name="hideText" />
+    <!--向下的箭头的图标-->
+    <attr format="reference" name="arrowDownImg" />
+    <!--是否使用默认的底部-->
+    <attr format="boolean" name="useDefaultBottom" />
+  </declare-styleable>
+</resources>

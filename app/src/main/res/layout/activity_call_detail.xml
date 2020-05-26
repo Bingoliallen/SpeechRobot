@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/common_app_theme6">
+
+  <com.example.common.widget.TitleBarView
+    android:id="@+id/title_bar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/title_bar_height"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:background="@drawable/bottom_thin_theme12"
+    app:left_drawable="@drawable/back"
+    app:left_drawable_color="@color/common_app_theme11"
+    app:left_drawable_height="22dp"
+    app:left_drawable_width="12dp"
+    app:left_height="@dimen/title_bar_height"
+    app:left_text_size="18sp"
+    app:left_width="30dp"
+    app:title="@string/call_detail_title"
+    app:title_text_color="@color/common_app_text_theme2"
+    app:title_text_size="@dimen/text_size2" />
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/btn_call"
+    android:layout_below="@+id/title_bar">
+
+    <android.support.constraint.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+      <TextView
+        android:id="@+id/tv_level"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="19dp"
+        android:background="@drawable/round5_app_theme3_4"
+        android:gravity="center"
+        android:textColor="@color/common_app_text_theme4"
+        android:textSize="@dimen/text_size9"
+        android:translationZ="4dp"
+        app:layout_constraintDimensionRatio="1.75:1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tv_time"
+        app:layout_constraintTop_toTopOf="parent" />
+      <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/round5_app_theme3_4"
+        android:gravity="center"
+        android:textColor="@color/common_app_text_theme4"
+        android:textSize="@dimen/text_size9"
+        android:translationZ="4dp"
+        app:layout_constraintDimensionRatio="1.75:1"
+        app:layout_constraintLeft_toRightOf="@+id/tv_level"
+        app:layout_constraintRight_toLeftOf="@+id/tv_count"
+        app:layout_constraintTop_toTopOf="@+id/tv_level" />
+      <TextView
+        android:id="@+id/tv_count"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/round5_app_theme3_4"
+        android:gravity="center"
+        android:textColor="@color/common_app_text_theme4"
+        android:textSize="@dimen/text_size9"
+        android:translationZ="4dp"
+        app:layout_constraintDimensionRatio="1.75:1"
+        app:layout_constraintLeft_toRightOf="@+id/tv_time"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_level" />
+
+      <com.vma.speechrobot.widget.ExpandableLinearLayout
+        android:id="@+id/ell1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@color/common_app_theme2"
+        android:orientation="vertical"
+        app:defaultItemCount="3"
+        app:expandText="展开更多"
+        app:hideText="收起更多"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_level"
+        app:useDefaultBottom="true">
+
+        <TextView
+          android:textStyle="bold"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:paddingBottom="10dp"
+          android:background="@drawable/bottom_thin_theme12"
+          android:drawableLeft="@drawable/talk_1"
+          android:drawablePadding="20dp"
+          android:gravity="center_vertical"
+          android:text="基础信息"
+          android:textColor="@color/common_app_text_theme2"
+          android:textSize="@dimen/text_size3" />
+
+        <TextView
+          android:id="@+id/tv_info1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:textColor="@color/common_app_text_theme2"
+          android:textSize="@dimen/text_size5" />
+
+        <android.support.v7.widget.RecyclerView
+          android:id="@+id/recycler_view_key"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:visibility="gone" />
+
+        <TextView
+          android:id="@+id/tv_info2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:textColor="@color/common_app_text_theme2"
+          android:textSize="@dimen/text_size5" />
+
+      </com.vma.speechrobot.widget.ExpandableLinearLayout>
+
+      <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="15dp"
+        android:background="@color/common_app_theme2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ell1">
+
+        <TextView
+          android:id="@+id/tv_record_title"
+          android:textStyle="bold"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:paddingBottom="10dp"
+          android:background="@drawable/bottom_thin_theme12"
+          android:drawableLeft="@drawable/talk_2"
+          android:drawablePadding="20dp"
+          android:gravity="center_vertical"
+          android:text="通话记录"
+          android:textColor="@color/common_app_text_theme2"
+          android:textSize="@dimen/text_size3" />
+
+        <ImageView
+          android:id="@+id/iv_control"
+          android:layout_width="20dp"
+          android:layout_height="20dp"
+          android:layout_marginTop="15dp"
+          android:layout_below="@+id/tv_record_title"
+          android:background="@drawable/talk_3" />
+
+        <ImageView
+          android:id="@+id/iv_download"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="15dp"
+          android:layout_alignParentRight="true"
+          android:layout_below="@+id/tv_record_title"
+          android:src="@drawable/talk_4" />
+
+        <TextView
+          android:id="@+id/tv_progress"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="9dp"
+          android:layout_alignBottom="@+id/iv_control"
+          android:layout_alignTop="@+id/iv_control"
+          android:layout_toRightOf="@+id/iv_control"
+          android:textColor="@color/common_app_text_theme3"
+          android:textSize="@dimen/text_size8" />
+
+        <SeekBar
+          android:id="@+id/seek_bar"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="9dp"
+          android:layout_marginRight="18dp"
+          android:layout_alignBottom="@+id/tv_progress"
+          android:layout_alignTop="@+id/tv_progress"
+          android:layout_toLeftOf="@+id/iv_download"
+          android:layout_toRightOf="@+id/tv_progress"
+          android:maxHeight="10dp"
+          android:minHeight="10dp"
+          android:progressDrawable="@drawable/progress_bar_task_theme13"
+          android:thumb="@null" />
+
+        <android.support.v7.widget.RecyclerView
+          android:id="@+id/recycler_view_chat"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="15dp"
+          android:layout_below="@+id/seek_bar" />
+
+      </RelativeLayout>
+    </android.support.constraint.ConstraintLayout>
+  </ScrollView>
+
+  <Button
+    android:id="@+id/btn_call"
+    style="?borderlessButtonStyle"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:layout_margin="10dp"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/round23_app_theme5"
+    android:text="@string/call_detail_call"
+    android:textColor="@color/common_app_text_theme4"
+    android:textSize="@dimen/text_size2" />
+</RelativeLayout>

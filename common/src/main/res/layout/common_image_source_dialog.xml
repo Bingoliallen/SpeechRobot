@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:paddingBottom="10dp"
+  android:paddingLeft="20dp"
+  android:paddingRight="20dp"
+  android:orientation="vertical">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/common_round5_white"
+    android:divider="@drawable/common_linear_layout_divider"
+    android:orientation="vertical"
+    android:showDividers="middle">
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/common_image_source_dialog_title_height"
+      android:gravity="center"
+      android:text="@string/common_image_source_dialog_title" />
+
+    <TextView
+      android:id="@+id/tv_camera"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/common_image_source_dialog_item_height"
+      android:gravity="center"
+      android:text="@string/common_image_source_dialog_camera"
+      android:textColor="@color/common_image_source_dialog_camera"
+      android:textSize="@dimen/common_image_source_dialog_text_size" />
+
+    <TextView
+      android:id="@+id/tv_album"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/common_image_source_dialog_item_height"
+      android:gravity="center"
+      android:text="@string/common_image_source_dialog_album"
+      android:textColor="@color/common_image_source_dialog_album"
+      android:textSize="@dimen/common_image_source_dialog_text_size" />
+
+  </LinearLayout>
+
+  <TextView
+    android:id="@+id/tv_cancel"
+    android:textStyle="bold"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/common_image_source_dialog_item_height"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/common_round5_white"
+    android:gravity="center"
+    android:text="@string/common_image_source_dialog_cancel"
+    android:textColor="@color/common_image_source_dialog_cancel"
+    android:textSize="@dimen/common_image_source_dialog_text_size" />
+
+</LinearLayout>

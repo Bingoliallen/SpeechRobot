@@ -1,0 +1,64 @@
+<resources>
+    <!--<string name="app_name">智能云呼</string>-->
+
+    <!--login-->
+    <!--<string name="login_title">智能云呼</string>-->
+    <string name="login_account_hint">请输入账号/手机号</string>
+    <string name="login_password_hint">请输入密码</string>
+    <string name="login_submit">登录</string>
+    <string name="login_type_enterprise">企业账号</string>
+    <string name="login_type_staff">员工账号</string>
+    <string name="login_forget">忘记密码?</string>
+
+    <!--forget-->
+    <string name="forget_account_hint">请输入绑定的手机号码</string>
+    <string name="forget_code_hint">请输入验证码</string>
+    <string name="forget_get_code">获取验证码</string>
+    <string name="forget_pwd_hint">请输入6-12位新密码</string>
+    <string name="forget_pwd_again_hint">请再次输入新密码</string>
+    <string name="forget_submit">确定</string>
+
+    <!--homepage-->
+    <string name="homepage_title">首页</string>
+    <string name="homepage_pie_title">客户等级占比</string>
+
+    <!--task manager-->
+    <string name="task_manager_title">任务列表</string>
+    <string name="task_manager_hint">请搜索任务ID/名称</string>
+    <string name="task_manager_submit">搜索</string>
+
+    <!--task detail-->
+    <string name="task_detail_title">任务详情</string>
+
+    <!--call record-->
+    <string name="call_record_level">客户等级</string>
+    <string name="call_record_count">通话轮次</string>
+    <string name="call_record_time">通话时长</string>
+    <string name="call_record_status">分配状态</string>
+    <string name="call_record_result">呼叫状态</string>
+    <string name="call_record_refresh">刷新</string>
+
+    <!--call detail-->
+    <string name="call_detail_title">通话详情</string>
+    <string name="call_detail_call">拨打电话</string>
+
+    <!--task info-->
+    <string name="task_detail_btn">明细</string>
+    <string name="task_detail_dialog_title">详细信息</string>
+
+
+
+    <string name="lfile_NotFoundBooks">请选择导入的图书</string>
+    <string name="lfile_NotFoundPath">SD 存储卡状态不可用</string>
+    <string name="lfile_UpOneLevel">上一级</string>
+    <string name="lfile_Selected">选中</string>
+    <string name="lfile_LItem">项</string>
+    <string name="lfile_Detail">详情</string>
+    <string name="lfile_FileSize">文件大小 : </string>
+    <string name="lfile_OutSize">已经达到最大选择数量</string>
+    <string name="lfile_SelectAll">全选</string>
+    <string name="lfile_Cancel">取消全选</string>
+    <string name="lfile_OK">确定</string>
+    <string name="lfile_ChooseTip">请选择文件夹</string>
+
+</resources>
